@@ -1,0 +1,8 @@
+{
+  "name": "yarn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AlexOgle4/Clapify.git",
+  "author": "Alex Ogle <alex.ogle4@gmail.com>",
+  "license": "MIT"
+}
