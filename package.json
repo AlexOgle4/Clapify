@@ -4,5 +4,14 @@
   "main": "index.js",
   "repository": "https://github.com/AlexOgle4/Clapify.git",
   "author": "Alex Ogle <alex.ogle4@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
