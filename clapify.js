@@ -1,5 +1,5 @@
 //Declare "clappify" as the function. "message" is the parameter of that function
-function clappify(message) {
+function clapify(message) {
   // trim message assigned to trimmed message
   // eliminating the spaces in the front and back of the "message"
   // "wordsArray" variable has been assigned to "trimmedMessage"
@@ -30,6 +30,7 @@ function clappify(message) {
   return clappedMessage
 }
 
-const clappedMessage = clappify('  Yass Queen   Bad Bitch  ')
+const clappedMessage = clapify('  Yass King   Bad Boi ')
 
 console.log(clappedMessage)
+module.exports = clapify
