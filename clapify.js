@@ -1,5 +1,5 @@
 //Declare "clappify" as the function. "message" is the parameter of that function
-function clapify(message) {
+function clapify(message, emojis) {
   // trim message assigned to trimmed message
   // eliminating the spaces in the front and back of the "message"
   // "wordsArray" variable has been assigned to "trimmedMessage"
@@ -22,15 +22,22 @@ function clapify(message) {
       return true
     }
   })
-  console.log('output', filteredWordsArray)
+  const wordsAndEmojis = []
+  for (let i = 0; i < filteredWordsArray.length; i++) {
+    const word = filteredWordsArray[i]
+    wordsAndEmojis.push(word)
+    const emoji = emojis[i % emojis.length]
+    wordsAndEmojis.push(emoji)
+    console.log(i, word)
+    console.log(wordsAndEmojis)
+  }
+  wordsAndEmojis.pop()
+
+  console.log('output', wordsAndEmojis)
   // put clap in the space
-  const clappedMessage = filteredWordsArray.join('👏')
+  const clappedMessage = wordsAndEmojis.join('')
   //   const clappedMessage = message.replace(' ', '👏')
   //
   return clappedMessage
 }
-
-const clappedMessage = clapify('  Yass King   Bad Boi ')
-
-console.log(clappedMessage)
 module.exports = clapify
